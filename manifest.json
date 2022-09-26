@@ -1,0 +1,24 @@
+{
+    "name": "TabsExtension",
+    "description": "f",
+    "manifest_version": 3,
+    "version": "1.0",
+    "action": {
+        "default_title": "Click to show an alert"
+    },
+    "background": {
+        "service_worker": "./js/background.js"
+    },
+    "permissions": ["tabs", "storage", "scripting", "activeTab"],
+    "commands": {
+        "tab-manager": {
+           "description": "Open tab manager",
+           "suggested_key": {
+              "default": "Ctrl+Shift+Y",
+              "linux": "Ctrl+Shift+Y",
+              "mac": "Command+E",
+              "windows": "Ctrl+Shift+Y"
+           }
+        }
+    }
+}
